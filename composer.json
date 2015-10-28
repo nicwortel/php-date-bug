@@ -1,0 +1,12 @@
+{
+    "name": "nicwortel/php-date-bug",
+    "authors": [
+        {
+            "name": "Nic Wortel"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^4.8"
+    }
+}
