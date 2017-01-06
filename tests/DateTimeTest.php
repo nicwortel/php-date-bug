@@ -27,6 +27,10 @@ class DateTimeTest extends PHPUnit_Framework_TestCase
      */
     public function testShouldCreateCorrectDateTimeImmutableObject($dateString)
     {
+        if (!class_exists('DateTimeImmutable')) {
+            $this->markTestSkipped('Class DateTimeImmutable does not exist');
+        }
+
         $dateTime = new DateTimeImmutable($dateString);
 
         $this->assertSame($dateString, $dateTime->format('Y-m-d'));
