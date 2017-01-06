@@ -3,6 +3,7 @@
 namespace Nic\PhpDateBug\Tests;
 
 use DateTime;
+use DateTimeImmutable;
 use PHPUnit_Framework_TestCase;
 
 class DateTimeTest extends PHPUnit_Framework_TestCase
@@ -10,13 +11,23 @@ class DateTimeTest extends PHPUnit_Framework_TestCase
     /**
      * @param string $dateString A date in YYYY-MM-DD format
      *
-     * @test
+     * @dataProvider dataProvider
+     */
+    public function testShouldCreateCorrectDateTimeObject($dateString)
+    {
+        $dateTime = new DateTime($dateString);
+
+        $this->assertSame($dateString, $dateTime->format('Y-m-d'));
+    }
+
+    /**
+     * @param string $dateString A date in YYYY-MM-DD format
      *
      * @dataProvider dataProvider
      */
-    public function shouldCreateCorrectDate($dateString)
+    public function testShouldCreateCorrectDateTimeImmutableObject($dateString)
     {
-        $dateTime = new DateTime($dateString);
+        $dateTime = new DateTimeImmutable($dateString);
 
         $this->assertSame($dateString, $dateTime->format('Y-m-d'));
     }
