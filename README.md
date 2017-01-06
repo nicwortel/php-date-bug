@@ -4,7 +4,7 @@ This repository contains a small PHPUnit test case that shows a bug I found in P
 [`DateTime`](https://secure.php.net/manual/en/class.datetime.php) implementation.
 
 When instantiating `DateTime` and `DateTimeImmutable` objects, this bug causes certain dates to be changed. More
-specifically, this is happening for December 31st, every 400 years, starting December 31st 2370.
+specifically, this is happening for December 31st, every 400 years, starting December 31st 2369.
 
 For more information see: https://bugs.php.net/bug.php?id=69205
 
