@@ -23,3 +23,8 @@ before_script:
 
 script:
   - php vendor/bin/phpunit
+
+notifications:
+  email:
+    on_success: change
+    on_failure: change
