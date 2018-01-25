@@ -4,9 +4,9 @@ namespace Nic\PhpDateBug\Tests;
 
 use DateTime;
 use DateTimeImmutable;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 
-class DateTimeTest extends PHPUnit_Framework_TestCase
+class DateTimeTest extends TestCase
 {
     /**
      * @param string $dateString A date in YYYY-MM-DD format
