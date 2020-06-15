@@ -8,4 +8,4 @@ specifically, this is happening for December 31st, every 400 years, starting Dec
 
 For more information see: https://bugs.php.net/bug.php?id=69205
 
-Current status: [![Build Status](https://travis-ci.org/nicwortel/php-date-bug.svg?branch=master)](https://travis-ci.org/nicwortel/php-date-bug)
+Current status: [![Build Status](https://travis-ci.com/nicwortel/php-date-bug.svg?branch=master)](https://travis-ci.com/nicwortel/php-date-bug)
