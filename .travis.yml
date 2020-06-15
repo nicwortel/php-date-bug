@@ -10,7 +10,7 @@ matrix:
     - php: nightly
 
 before_script:
-  - composer install --prefer-source --dev
+  - composer install --prefer-source --ignore-platform-reqs
 
 script:
   - php vendor/bin/phpunit
